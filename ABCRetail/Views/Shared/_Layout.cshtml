@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ABCRetail</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ABCRetail.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        @{
+            var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+            var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+        }
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ABC Retail</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Home" && currentAction == "Index" ? "active" : "")"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Customer" ? "active" : "")"
+                               asp-controller="Customer" asp-action="Index">
+                                <i class="fas fa-users"></i> Customer
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Product" ? "active" : "")"
+                               asp-controller="Product" asp-action="Index">
+                                <i class="fas fa-box"></i> Product
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Order" ? "active" : "")"
+                               asp-controller="Order" asp-action="Index">
+                                <i class="fas fa-shopping-cart"></i> Order
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Upload" ? "active" : "")"
+                               asp-controller="Upload" asp-action="Index">
+                                <i class="fas fa-upload"></i> Upload Files
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light @(currentController == "Home" && currentAction == "Privacy" ? "active" : "")"
+                               asp-controller="Home" asp-action="Privacy">
+                                <i class="fas fa-shield-alt"></i> Privacy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-2 mb-md-0">
+                &copy; 2025 ABCRetail
+            </div>
+            <div>
+                <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-decoration-none me-3">Privacy Policy</a>
+                <a asp-area="" asp-controller="Home" asp-action="" class="text-decoration-none me-3">Terms of Service</a>
+                <a href="" class="text-decoration-none">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

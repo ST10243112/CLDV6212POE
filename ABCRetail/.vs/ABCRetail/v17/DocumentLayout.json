@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mfundo langelihle\\Desktop\\Cloud\\Cloud 2\\CLDV6212POE\\ABCRetail\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2ABF0FE-BC76-44D4-9EE5-C8D26681D2FD}|ABCRetail.csproj|c:\\users\\mfundo langelihle\\desktop\\cloud\\cloud 2\\cldv6212poe\\abcretail\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2ABF0FE-BC76-44D4-9EE5-C8D26681D2FD}|ABCRetail.csproj|solutionrelative:controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2ABF0FE-BC76-44D4-9EE5-C8D26681D2FD}|ABCRetail.csproj|c:\\users\\mfundo langelihle\\desktop\\cloud\\cloud 2\\cldv6212poe\\abcretail\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2ABF0FE-BC76-44D4-9EE5-C8D26681D2FD}|ABCRetail.csproj|solutionrelative:globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "C:\\Users\\Mfundo langelihle\\Desktop\\Cloud\\Cloud 2\\CLDV6212POE\\ABCRetail\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UploadController.cs",
+              "ToolTip": "C:\\Users\\Mfundo langelihle\\Desktop\\Cloud\\Cloud 2\\CLDV6212POE\\ABCRetail\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T20:59:19.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\Mfundo langelihle\\Desktop\\Cloud\\Cloud 2\\CLDV6212POE\\ABCRetail\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\Mfundo langelihle\\Desktop\\Cloud\\Cloud 2\\CLDV6212POE\\ABCRetail\\GlobalUsings.cs",
+              "RelativeToolTip": "GlobalUsings.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T20:49:29.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
